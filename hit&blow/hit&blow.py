@@ -97,13 +97,6 @@ def HB_num(ans, inter):
 
     return hit, blow
 
-#難易度選択画面の生成
-def create_defficulty(root):
-    frame = tk.Frame(root, width=WIDTH, height=HEIGHT, bg="lightblue")
-    frame.pack()
-
-    #スタートボタン，手数入力ボタン，桁数入力ボタン
-
 
 #メインウィンドウ定義
 root = tk.Tk()
@@ -139,10 +132,5 @@ button.grid(row=2, column=0, padx=5, pady=10)
 
 clear_button = tk.Button(left_frame, text="クリア", command=on_Clear_Button)
 clear_button.grid(row=2, column=1, padx=5, pady=10)
-
-left_frame.pack_forget()
-right_frame.pack_forget()
-
-create_defficulty(root)
 
 root.mainloop()
